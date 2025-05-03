@@ -1,0 +1,10 @@
+<h1>Students App</h1>
+<app-student-form/>
+
+
+<h4>Estudiantes aprobados</h4>
+<app-student-list [data]="approvedStudents" (delete)="OnDeleteAprobado($event)"/>
+<h4>Estudiantes desaprobados</h4>
+<app-student-list [data]="failingStudents" (delete)="OnDeleteDesaprobado($event)"/>
+<h4>Estudiantes ausentes</h4>
+<app-student-list [data]="absentStudents" (delete)="OnDeleteAusente($event)"/> 
